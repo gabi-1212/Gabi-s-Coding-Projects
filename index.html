@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gabi's Code Library</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f4f4f4;
+            color: #333;
+            overflow-x: hidden;
+            height: 100%;
+            transition: all 0.3s ease;
+        }
+
+        h1, h2, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        header {
+            margin-bottom: 50px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            color: #333;
+            font-weight: 700;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        header p {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        header h1:hover {
+            transform: scale(1.05);
+        }
+
+        #projects-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .project {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+            opacity: 0;
+            transform: scale(0.8);
+            transition: all 0.5s ease;
+        }
+
+        .project.show {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .project:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+            background-color: #f0f0f0;
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        .typing-effect {
+            font-size: 1.2em;
+            font-weight: 500;
+            color: #333;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Gabi's Code Library</h1>
+            <p class="typing-effect">Explore cool and modern web projects.</p>
+            <p class="typing-effect"><a href="https://github.com/sahandghavidel/HTML-CSS-JavaScript-projects-for-beginners/tree/main">Source Code</a></p>
+        </header>
+
+        <main>
+            <section id="projects-list">
+                <div class="project" onclick="window.location.href='/projects/age-calculator'">Age Calculator</div>
+                <div class="project" onclick="window.location.href='/projects/animated-search-bar'">Animated Search Bar</div>
+                <div class="project" onclick="window.location.href='/projects/auto-text-effect-animation'">Auto Text Effect Animation</div>
+                <div class="project" onclick="window.location.href='/projects/background-image-scroll-effect'">Background Image Scroll Effect</div>
+                <div class="project" onclick="window.location.href='/projects/background-video'">Background Video</div>
+                <div class="project" onclick="window.location.href='/projects/basic-calculator'">Basic Calculator</div>
+                <div class="project" onclick="window.location.href='/projects/blurred-background-popup'">Blurred Background Popup</div>
+                <div class="project" onclick="window.location.href='/projects/bmi-calculator'">BMI Calculator</div>
+                <div class="project" onclick="window.location.href='/projects/button-ripple-effect'">Button Ripple Effect</div>
+                <div class="project" onclick="window.location.href='/projects/clock'">Clock</div>
+                <div class="project" onclick="window.location.href='/projects/counter'">Counter</div>
+                <div class="project" onclick="window.location.href='/projects/currency-converter'">Currency Converter</div>
+                <div class="project" onclick="window.location.href='/projects/dad-jokes-generator'">Dad Jokes Generator</div>
+                <div class="project" onclick="window.location.href='/projects/dark-mode-toggle'">Dark Mode Toggle</div>
+                <div class="project" onclick="window.location.href='/projects/dice-roll-simulator'">Dice Roll Simulator</div>
+                <div class="project" onclick="window.location.href='/projects/digital-clock'">Digital Clock</div>
+                <div class="project" onclick="window.location.href='/projects/double-landing-page'">Double Landing Page</div>
+                <div class="project" onclick="window.location.href='/projects/drum-kits'">Drum Kits</div>
+                <div class="project" onclick="window.location.href='/projects/emoji-rating'">Emoji Rating</div>
+                <div class="project" onclick="window.location.href='/projects/english-dictionary'">English Dictionary</div>
+                <div class="project" onclick="window.location.href='/projects/feedback-ui'">Feedback UI</div>
+                <div class="project" onclick="window.location.href='/projects/heart-trail-animation'">Heart Trail Animation</div>
+                <div class="project" onclick="window.location.href='/projects/image-search-app'">Image Search App</div>
+                <div class="project" onclick="window.location.href='/projects/image-slider'">Image Slider</div>
+                <div class="project" onclick="window.location.href='/projects/loading-bar'">Loading Bar</div>
+                <div class="project" onclick="window.location.href='/projects/loan-calculator'">Loan Calculator</div>
+                <div class="project" onclick="window.location.href='/projects/mini-calendar'">Mini Calendar</div>
+                <div class="project" onclick="window.location.href='/projects/month-calender'">Month Calendar</div>
+                <div class="project" onclick="window.location.href='/projects/mouse-event'">Mouse Event</div>
+                <div class="project" onclick="window.location.href='/projects/multiplication-app'">Multiplication App</div>
+                <div class="project" onclick="window.location.href='/projects/music-player'">Music Player</div>
+                <div class="project" onclick="window.location.href='/projects/navbar'">Navbar</div>
+                <div class="project" onclick="window.location.href='/projects/new-year-countdown'">New Year Countdown</div>
+                <div class="project" onclick="window.location.href='/projects/note-app'">Note App</div>
+                <div class="project" onclick="window.location.href='/projects/photo-gallery'">Photo Gallery</div>
+                <div class="project" onclick="window.location.href='/projects/pomodoro-timer'">Pomodoro Timer</div>
+                <div class="project" onclick="window.location.href='/projects/profile-statistics'">Profile Statistics</div>
+                <div class="project" onclick="window.location.href='/projects/q-and-a-section'">Q&A Section</div>
+                <div class="project" onclick="window.location.href='/projects/random-color-generator'">Random Color Generator</div>
+                <div class="project" onclick="window.location.href='/projects/random-emoji'">Random Emoji</div>
+                <div class="project" onclick="window.location.href='/projects/random-password-generator'">Random Password Generator</div>
+                <div class="project" onclick="window.location.href='/projects/random-photos'">Random Photos</div>
+                <div class="project" onclick="window.location.href='/projects/random-quote-generator'">Random Quote Generator</div>
+                <div class="project" onclick="window.location.href='/projects/real-time-character-counter'">Real-Time Character Counter</div>
+                <div class="project" onclick="window.location.href='/projects/recipe-book-app'">Recipe Book App</div>
+                <div class="project" onclick="window.location.href='/projects/rock-paper-scissors-game'">Rock Paper Scissors Game</div>
+                <div class="project" onclick="window.location.href='/projects/rotating-image-gallery'">Rotating Image Gallery</div>
+                <div class="project" onclick="window.location.href='/projects/sidebar'">Sidebar</div>
+                <div class="project" onclick="window.location.href='/projects/social-media-selector-menu'">Social Media Selector Menu</div>
+                <div class="project" onclick="window.location.href='/projects/step-progress-bar'">Step Progress Bar</div>
+                <div class="project" onclick="window.location.href='/projects/sticky-navbar'">Sticky Navbar</div>
+                <div class="project" onclick="window.location.href='/projects/stopwatch'">Stopwatch</div>
+                <div class="project" onclick="window.location.href='/projects/tabs'">Tabs</div>
+                <div class="project" onclick="window.location.href='/projects/temperature-converter'">Temperature Converter</div>
+                <div class="project" onclick="window.location.href='/projects/testimonial-slider'">Testimonial Slider</div>
+                <div class="project" onclick="window.location.href='/projects/tip-calculator'">Tip Calculator</div>
+                <div class="project" onclick="window.location.href='/projects/to-do-list'">To-Do List</div>
+                <div class="project" onclick="window.location.href='/projects/video-trailer-popup'">Video Trailer Popup</div>
+                <div class="project" onclick="window.location.href='/projects/weather-app'">Weather App</div>
+                <div class="project" onclick="window.location.href='/projects/weight-converter'">Weight Converter</div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 My Portfolio</p>
+        </footer>
+    </div>
+
+    <script>
+        // Typewriter effect
+        const textElement = document.querySelector('.typing-effect');
+        const text = ' Explore cool and modern web projects.';
+        let index = 0;
+        function typeText() {
+            if (index < text.length) {
+                textElement.innerHTML += text.charAt(index);
+                index++;
+                setTimeout(typeText, 50);
+            }
+        }
+        typeText();
+
+        // Reveal projects with delay
+        const projects = document.querySelectorAll('.project');
+        window.addEventListener('scroll', () => {
+            const windowHeight = window.innerHeight;
+            projects.forEach(project => {
+                const projectTop = project.getBoundingClientRect().top;
+                if (projectTop < windowHeight - 100) {
+                    project.classList.add('show');
+                }
+            });
+        });
+
+        // Smooth Scroll Effect
+        document.querySelectorAll('.project').forEach(project => {
+            project.addEventListener('click', () => {
+                window.scrollTo({
+                    top: project.offsetTop,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
